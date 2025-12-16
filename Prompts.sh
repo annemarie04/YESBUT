@@ -49,27 +49,27 @@
     ]
 }
 
-# - Prompts Set 3
-# {
-#     "prompts_caption_gen":[
-#         "Give me a detailed literally description of the image."
-#     ],
-#     "prompts_contradiction_gen_w_caption": [
-#         "Based on the following image's description: {image_caption}. Give me the concise contradiction depicted in the image in one or two sentences."
-#     ],
-#     "prompts_contradiction_gen_wo_caption": [
-#         "Given an image, the image is divided into two or more panels. There is the contrast relationship in the image through panels. Describe the elements visible in each panel. Give me the concise interpretation how these panels convey contrasting perspectives, which you only need to output the contradiction in one or two sentences."
-#     ],
-#     "prompts_philosophy_gen_w_caption": [
-#         "Given an image with the following description: {image_caption}. \nTell me the best option in the following options who represents the deep semantic of the image? \n{philosophy_options} \nJust tell me the correct option by outputing corresponding letter (A, B, C, or D), no more explanation."
-#     ],
-#     "prompts_philosophy_gen_wo_caption": [
-#         "Given an image, which has two or more panels. There is contrast in these panels. \nTell me the best option in the following options who represents the deep semantic of the image? \n{philosophy_options} \nJust tell me the correct option by outputing corresponding letter (A, B, C, or D), no more explanation."
-#     ]
-#     "prompts_title_gen_w_caption": [
-#         "Given an image with the following description: {image_caption}. \nTell me the best title in the following title options who represents the image? \n{title_options} \n Just tell me the correct option by outputing corresponding letter (A, B, C, or D), no more explanation."
-#     ],
-#     "prompts_title_gen_wo_caption": [
-#         "Given an image, the image is divided into two or more panels. There is the contrast relationship in the image through panels. \nTell me the best title in the following title options who represents the image? \n{title_options} \nJust tell me the correct option by outputing corresponding letter (A, B, C, or D), no more explanation."
-#     ]
-# }
+- Prompts Set 3
+{
+    "prompts_caption_gen":[
+        "Give me a detailed literally description of the image."
+    ],
+    "prompts_contradiction_gen_w_caption": [
+        "Based on the following image's description: {image_caption}. Give me the concise contradiction depicted in the image in one or two sentences."
+    ],
+    "prompts_contradiction_gen_wo_caption": [
+        "Given an image, the image is divided into two or more panels. There is the contrast relationship in the image through panels. Describe the elements visible in each panel. Give me the concise interpretation how these panels convey contrasting perspectives, which you only need to output the contradiction in one or two sentences."
+    ],
+    "prompts_philosophy_gen_w_caption": [
+        "Given an image with the following description: {image_caption}. \nTell me the best option in the following options who represents the deep semantic of the image? \n{philosophy_options} \nJust tell me the correct option by outputing corresponding letter (A, B, C, or D), no more explanation."
+    ],
+    "prompts_philosophy_gen_wo_caption": [
+        "Given an image, which has two or more panels. There is contrast in these panels. \nTell me the best option in the following options who represents the deep semantic of the image? \n{philosophy_options} \nJust tell me the correct option by outputing corresponding letter (A, B, C, or D), no more explanation."
+    ]
+    "prompts_title_gen_w_caption": [
+        "Given an image with the following description: {image_caption}. \nTell me the best title in the following title options who represents the image? \n{title_options} \n Just tell me the correct option by outputing corresponding letter (A, B, C, or D), no more explanation."
+    ],
+    "prompts_title_gen_wo_caption": [
+        "Given an image, the image is divided into two or more panels. There is the contrast relationship in the image through panels. \nTell me the best title in the following title options who represents the image? \n{title_options} \nJust tell me the correct option by outputing corresponding letter (A, B, C, or D), no more explanation."
+    ]
+}
