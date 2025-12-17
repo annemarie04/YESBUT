@@ -9,8 +9,8 @@ import httpx
 import base64
 from mimetypes import guess_type
 import argparse
-from instruction_generation_yesbut_1 import formulate_instruction
-from instruction_generation_yesbut_1 import *
+from instruction_generation_yesbut import formulate_instruction
+from instruction_generation_yesbut import *
 
 
 projectid = "your projectid"
