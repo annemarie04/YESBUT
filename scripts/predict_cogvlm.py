@@ -1,7 +1,7 @@
 import json
 import re
 from transformers import BitsAndBytesConfig
-from instruction_generation_yesbut_all import formulate_instruction
+from instruction_generation_yesbut import formulate_instruction
 
 #---
 import torch

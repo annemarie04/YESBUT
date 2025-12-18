@@ -1,8 +1,8 @@
 import json
 import re
 from transformers import BitsAndBytesConfig
-from instruction_generation_yesbut_2 import formulate_instruction
-from instruction_generation_yesbut_2 import *
+from instruction_generation_yesbut import formulate_instruction
+from instruction_generation_yesbut import *
 
 #---
 from transformers import LlavaNextProcessor, LlavaNextForConditionalGeneration
