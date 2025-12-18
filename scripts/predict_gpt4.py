@@ -1,8 +1,7 @@
 import json
 import os
 import openai
-# from openai import OpenAI
-import openai
+from openai import OpenAI
 import time
 from nltk.tokenize import word_tokenize
 import base64
@@ -38,37 +37,38 @@ def local_image_to_data_url(image_path):
     return f"data:{mime_type};base64,{base64_encoded_data}"
 
 
-def gpt4_vision_generation(input_prompt, image_path, model="gpt-4-vision-preview", temperature=1):
+def gpt4_vision_generation(input_prompt, image_path, model="gpt-5.1", temperature=1):
     API_KEY = ""  # your api_key
 
     data_url = local_image_to_data_url(image_path)
-
+    client = OpenAI(
+    # This is the default and can be omitted
+    api_key=API_KEY
+    )
     for _ in range(10):
         try:
-            response = openai.ChatCompletion.create(
+            response = client.responses.create(
                 model=model,
-                messages=[
+                input=[
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": [
                         { 
-                            "type": "text", 
+                            "type": "input_text", 
                             "text": input_prompt 
                         },
                         { 
-                            "type": "image_url",
-                            "image_url": {
-                                "url":data_url
-                            }
+                            "type": "input_image",
+                            "image_url":data_url
                         }
                         ]}
-                ],
-                temperature=temperature,
-                max_tokens=2048,
-                top_p=1,
-                frequency_penalty=0,
-                presence_penalty=0,
-                api_key=API_KEY,
-                # api_base = API_BASE
+                ]
+                # temperature=temperature,
+                # max_tokens=2048,
+                # top_p=1,
+                # frequency_penalty=0,
+                # presence_penalty=0,
+                # api_key=API_KEY,
+                # # api_base = API_BASE
             )
             if response is not None:
                 break
